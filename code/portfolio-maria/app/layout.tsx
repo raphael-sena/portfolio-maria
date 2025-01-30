@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+
+const liberRegular = localFont({
+  src: "../public/fonts/LiberRegular.woff",
+  weight: "400",
+  style: "normal",
+  variable: "--font-liber",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${liberRegular.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
