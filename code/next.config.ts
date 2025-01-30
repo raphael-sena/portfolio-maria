@@ -4,11 +4,8 @@ const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig: NextConfig = {
   output: "export",
-  images: {
-    unoptimized: true,
-  },
   basePath: isProd ? '/code' : '',
-  assetPrefix: "/portfolio-maria/",
+  assetPrefix: "/code",
   trailingSlash: true,
 };
 
