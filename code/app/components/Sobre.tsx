@@ -7,7 +7,7 @@ import { SlMagnifier } from "react-icons/sl";
 
 export default function Sobre() {
   return (
-    <div className="min-h-screen w-screen flex justify-center bg-grey">
+    <div className="min-h-screen w-screen flex justify-center bg-grey pt-10 sticky top-0">
       <div className="space-y-20 max-w-[1024px] flex-col justify-center">
         <nav>
           <ul className="flex justify-between *:py-1 text-lg">

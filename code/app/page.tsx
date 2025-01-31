@@ -1,8 +1,10 @@
+import Header from "./components/Header";
 import Sobre from "./components/Sobre";
 
 export default function Home() {
   return (
-    <div className="*:mb-10">
+    <div className="relative">
+      <Header />
       <Sobre />
     </div>
   );
