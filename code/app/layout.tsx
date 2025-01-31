@@ -10,6 +10,13 @@ const liberRegular = localFont({
   variable: "--font-liber",
 });
 
+const beautifullyDelicious = localFont({
+  src: "../public/fonts/BDSans-Thin.woff",
+  weight: "400",
+  style: "normal",
+  variable: "--font-beautifully-delicious",
+})
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -33,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${liberRegular.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${liberRegular.variable} ${beautifullyDelicious.variable} ${geistSans.variable} ${geistMono.variable} font-delicious font-medium antialiased text-black flex justify-center items-center`}
       >
         {children}
       </body>
