@@ -23,6 +23,9 @@ jobs:
       
       - name: Configurar Node.js
         uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
 
       - name: Instalar dependências
         run: npm install
@@ -35,7 +38,7 @@ jobs:
       - name: Upload do artefato
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./code/out
+          path: code/out
 
   deploy:
     environment:
